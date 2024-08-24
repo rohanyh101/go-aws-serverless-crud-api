@@ -61,7 +61,7 @@ This repository contains a full serverless stack CRUD API built with Golang, lev
   - Update user: `PUT` `/<apigateway_url> --data <resource>`
   - Delete user: `DELETE` `/<apigateway_url>/\?email\=`
   
-### **Example Usage**
+### **Example Usage,**
   Here's how to create a new resource using the API:
    - Create user:
      ```powershell
@@ -90,9 +90,9 @@ This repository contains a full serverless stack CRUD API built with Golang, lev
     curl -X DELETE https://ly7abx6bgi.execute-api.ap-south-1.amazonaws.com/staging\?email\=rohan@gmail.com
   ```
 
-### Contributing
+### Contributing:
 Contributions are welcome! If you have suggestions for improving this project or would like to contribute code, please feel free to fork the repository and submit a pull request. Make sure to follow the existing code style and include relevant tests with your submission.
 
 
-### Contact,
+### Contact:
 If you have any questions, or feedback, or need further assistance, feel free to reach out. You can contact me at rohanyh101@gmail.com.
