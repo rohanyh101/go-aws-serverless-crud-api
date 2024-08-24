@@ -16,7 +16,7 @@ This repository contains a full serverless stack CRUD API built with Golang, lev
 
 ### Deployment
 1. **Clone the Repository:**
-   ```powershell
+   ```bash
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
    ```
@@ -32,14 +32,14 @@ This repository contains a full serverless stack CRUD API built with Golang, lev
    
         1. **Build the Binary**:
          - Compile your Go code into a binary that is compatible with AWS Lambda. For example,
-            ```powershell
+            ```bash
               GOOS=linux GOARCH=amd64 go build -o bootstrap main.go
             ```
          - don't forget to name the binary executable as `bootstrap`, it is mandatory.
            
         2. **Package the Binary**:
           - Create a ZIP file containing the compiled binary
-           ```powershell
+           ```bash
              zip bootstrap.zip main
            ```
         - This ZIP file will be uploaded to AWS Lambda via the AWS Management Console.
@@ -64,29 +64,29 @@ This repository contains a full serverless stack CRUD API built with Golang, lev
 ### **Example Usage,**
   Here's how to create a new resource using the API:
    - Create user:
-     ```powershell
-        curl --location --request POST 'https://ly7abx6bgi.execute-api.ap-south-1.amazonaws.com/staging' \
-         --data '{ "email": "rohan@gmail.com", "firstname": "rohan", "lastname": "yh" }'
+     ```bash
+        curl -X POST https://ly7abx6bgi.execute-api.ap-south-1.amazonaws.com/staging \
+        -d '{"email":"rohan@gmail.com","firstname":"rohan","lastname":"yh"}'
      ```
 
    - Get user:
-     ```powershell
+     ```bash
        curl -X GET https://ly7abx6bgi.execute-api.ap-south-1.amazonaws.com/staging\?email\=rohan@gmail.com
      ```
 
    - Get all users:
-     ```powershell
+     ```bash
        curl -X GET https://ly7abx6bgi.execute-api.ap-south-1.amazonaws.com/staging
      ```
 
   - Update user:
-      ```powershell
-         curl --location --request PUT https://ly7abx6bgi.execute-api.ap-south-1.amazonaws.com/staging \
-         --data '{ "email": "rohan@gmail.com", "firstname": "rohan", "lastname": "honnakatti" }'
+      ```bash
+      curl -X PUT https://ly7abx6bgi.execute-api.ap-south-1.amazonaws.com/staging \
+      -d '{"email":"rohan@gmail.com","firstname":"rohan","lastname":"honnakatti"}'
        ```
 
 - Delete user:
-  ```powershell
+  ```bash
     curl -X DELETE https://ly7abx6bgi.execute-api.ap-south-1.amazonaws.com/staging\?email\=rohan@gmail.com
   ```
 
