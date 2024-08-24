@@ -65,29 +65,29 @@ This repository contains a full serverless stack CRUD API built with Golang, lev
   Here's how to create a new resource using the API:
    - Create user:
      ```bash
-        curl -X POST https://ly7abx6bgi.execute-api.ap-south-1.amazonaws.com/staging \
+        curl -X POST https://abc.exe-api.ap-south-1.amazonaws.com/staging \
         -d '{"email":"rohan@gmail.com","firstname":"rohan","lastname":"yh"}'
      ```
 
    - Get user:
      ```bash
-       curl -X GET https://ly7abx6bgi.execute-api.ap-south-1.amazonaws.com/staging\?email\=rohan@gmail.com
+       curl -X GET https://abc.exe-api.ap-south-1.amazonaws.com/staging\?email\=rohan@gmail.com
      ```
 
    - Get all users:
      ```bash
-       curl -X GET https://ly7abx6bgi.execute-api.ap-south-1.amazonaws.com/staging
+       curl -X GET https://abc.exe-api.ap-south-1.amazonaws.com/staging
      ```
 
   - Update user:
       ```bash
-      curl -X PUT https://ly7abx6bgi.execute-api.ap-south-1.amazonaws.com/staging \
+      curl -X PUT https://abc.exe-api.ap-south-1.amazonaws.com/staging \
       -d '{"email":"rohan@gmail.com","firstname":"rohan","lastname":"honnakatti"}'
        ```
 
 - Delete user:
   ```bash
-    curl -X DELETE https://ly7abx6bgi.execute-api.ap-south-1.amazonaws.com/staging\?email\=rohan@gmail.com
+    curl -X DELETE https://abc.exe-api.ap-south-1.amazonaws.com/staging\?email\=rohan@gmail.com
   ```
 
 ### Contributing:
